@@ -1,0 +1,239 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Abonnements{% endblock %}
+{% block titrePage %}Abonnements {% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+{% endblock %}
+{% block body %}
+
+
+
+    <div class="container animate__animated animate__flipInY">
+        <div class="row">
+            <div class="col-xs-12 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Bronze</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="the-price">
+                            <h1>
+                                $10<span class="subscript">/mo</span></h1>
+                            <small>1 mois gratuit</small>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    1 compte
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    4 mois
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Accès à tous les clubs BastFit
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Cardio / Musculation / Cours collectifs vidéos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Entrainement solo
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Frais d'inscription : GRATUIT
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Commencer</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="panel panel-success">
+                    <div class="cnrflash">
+                        <div class="cnrflash-inner">
+
+                        </div>
+                    </div>
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Silver</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="the-price">
+                            <h1>
+                                $20<span class="subscript">/mo</span></h1>
+                            <small>1 mois gratuit</small>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    2 comptes
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    6 mois
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Accès à tous les clubs BastFit
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Cardio / Musculation / Cours collectifs vidéos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Entrainement duo
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Frais d'inscription : GRATUIT
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Commencer</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Gold</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="the-price">
+                            <h1>
+                                $35<span class="subscript">/mo</span></h1>
+                            <small>1 mois gratuit</small>
+                        </div>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    5 comptes
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    12 mois
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Accès à tous les clubs BastFit
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Cardio / Musculation / Cours collectifs vidéos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Entrainement multi
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    Frais d'inscription : GRATUIT
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="http://www.jquery2dotnet.com" class="btn btn-success" role="button">Commencer</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <link rel="stylesheet" href="{{ asset('css/inscrire.css') }}">
+
+    <div class="">
+        <section style="height:80px;"></section>
+
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <img src="{{ asset('images/logo/Logo.png') }}" >
+                    <a href="https://time.is/Besançon" id="time_is_link" >Heure à Besançon :</a>
+                    <span id="_z71f"></span>
+                    <script src="//widget.time.is/t.js"></script>
+                    <script>
+                        time_is_widget.init({_z71f:{id:"Besançon_z71f"}});
+                    </script>
+                    <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="{{ path('acceuille') }}">Acceuil</a></li>
+                            <li><a href="{{ path('newsletter') }}">Newsletter</a></li>
+                            <li><a href="{{ path('abonnements') }}">Abonnements</a></li>
+                            <li><a href="{{ path('contacter') }}">Nous contacter</a></li>
+                            <li><a href="{{ path('app_register') }}">S'inscrire</a></li>
+                            <li><a href="{{ path('app_login') }}">Se connecter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/bastien.odt/?hl=fr">Instagram</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Newsletter</h4>
+                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                    <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Bastien Oudet</a></p></section>
+
+    </div>
+{% endblock %}

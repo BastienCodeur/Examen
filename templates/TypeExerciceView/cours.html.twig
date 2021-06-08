@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>COURS COLLECTIFS</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/courscollect.jpg') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Qu’est-ce que sont les cours collectifs?</h4>
+            <h5>  <p class="card-text">Les cours collectif de fitness comportent une grande variété de techniques et méthodes. Le Step, LIA, HIA, Body Combat, RPM et Body Pump sont parmi les plus connus et les plus pratiqués dans les salles de sport.</p>  </h5>
+            <h5> <p>✔L’amélioration de la silhouette</p> </h5>
+            <h5> <p>✔La tonicité</p> </h5>
+            <h5> <p>✔L’endurance</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

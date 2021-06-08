@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>CARDIO-TRAINING</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/cardio.webp') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Qu’est-ce que le cardio-training ?</h4>
+            <h5>  <p class="card-text">Le cardio-training, ou entraînement cardiovasculaire, est un entraînement qui joue sur le contrôle de la fréquence cardiaque lors d’un effort à intensité progressive. Le cardio-training permet d’améliorer la performance du cœur et des poumons pour une meilleure distribution de l’oxygène.</p>  </h5>
+            <h5> <p>✔Il vous aide à brûler les graisses et les calories pour perdre du poids</p> </h5>
+            <h5> <p>✔Il améliore la performance cardiaque</p> </h5>
+            <h5> <p>✔Il augmente la capacité pulmonaire</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

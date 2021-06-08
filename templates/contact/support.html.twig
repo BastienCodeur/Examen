@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Support Ticket!{% endblock %}
+
+{% block body %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Contenu</th>
+
+        </tr>
+        </thead>    {% for contact in contacts %}
+
+
+        <tr>
+            <td>{{ contact.id }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.contenu }}</td>
+            <td><button><a href="{{ path('reponse', {id:contact.id}) }}">Répondre</a></button></td>
+
+
+
+
+        </tr>
+
+
+    {% else %}
+        <tr>
+            <td colspan="5">no records found</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

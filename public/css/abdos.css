@@ -1,0 +1,7 @@
+.cancel-visited > a {
+    color: white;
+}
+.cancel-visited > a:hover {
+    text-decoration: none;
+    color: white;
+}

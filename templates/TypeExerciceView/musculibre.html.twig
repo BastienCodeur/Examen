@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>MUSCULATION LIBRE</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/musculibre.jpg') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Qu’est-ce que la musculation libre ?</h4>
+            <h5>  <p class="card-text">Les exercices avec poids libres sont à prioriser dans l’entraînement en musculation dans le but d’augmenter les performances sportives.</p>  </h5>
+            <h5> <p>✔Perdre du gras</p> </h5>
+            <h5> <p>✔Réaliser une performance sportive</p> </h5>
+            <h5> <p>✔Augmenter votre de masse musculaire.</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

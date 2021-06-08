@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>CROSS-TRAINING</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/cross.jpg') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Qu’est-ce que le cross-training ?</h4>
+            <h5>  <p class="card-text">Le Cross-Training, est un entraînement intensif de type circuit-training où l’on doit réaliser plusieurs exercices dans un temps donné tels que des tractions, des squats ou encore des boxs jumps.</p>  </h5>
+            <h5> <p>✔La technique</p> </h5>
+            <h5> <p>✔La force</p> </h5>
+            <h5> <p>✔Le cardio</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

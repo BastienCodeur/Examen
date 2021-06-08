@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>ABDOS ETIREMENTS</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/étirement-des-abdos.jpeg') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Special title treatment</h4>
+           <h5>  <p class="card-text">Cet espace conviendra parfaitement pour vos séances d'abdominaux et vos étirements après un bon entraînement ! Pratique et calme, entraînez-vous dans une salle tout confort à votre rythme.</p>  </h5>
+            <h5> <p>✔Musculation plus forte</p> </h5>
+            <h5> <p>✔Motivation multiplié !</p> </h5>
+            <h5> <p>✔Musculation plus forte</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

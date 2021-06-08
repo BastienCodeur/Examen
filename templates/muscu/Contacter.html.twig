@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nous contacter{% endblock %}
+{% block titrePage %}Nous contacter {% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+{% endblock %}
+{% block body %}
+
+
+    <!-- Section: Contact v.1 -->
+    <div class="animate__animated animate__rotateIn">
+    <section class="my-5">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center my-5">Nous contacter</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto pb-5">N'hésitez pas à nous contacter si vous avez des questions!</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-lg-5 mb-lg-0 mb-4">
+
+                <!-- Form with header -->
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Header -->
+                        <div class="form-header blue accent-1">
+                            <h3 class="mt-2"><i class="fas fa-envelope"></i> Contact-nous:</h3>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-user prefix grey-text"></i>
+
+                            <label for="form-name">Ton prénom</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Ton adresse email</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fas fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Contenu</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fas fa-pencil-alt prefix grey-text"></i>
+                            <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
+
+                            <!-- Material checked -->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="materialChecked2" checked>
+                                <label class="form-check-label" for="materialChecked2">J'accèpte les conditions d'utilisations</label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primar">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form with header -->
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-7">
+
+                <!--Google map-->
+                <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+                    <iframe src="https://maps.google.com/maps?q=Manhatan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                            style="border:0" allowfullscreen></iframe>
+                </div>
+                <!-- Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        <p>Manhattan, 66506</p>
+                        <p class="mb-md-0">Etats-Unis</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <p>+33 7 62 16 38 72</p>
+                        <p class="mb-md-0">Lundi - Samedi, 8:00-22:00</p>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-floating blue accent-1">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <p>support@gmail.com</p>
+                        <p class="mb-0">bastfit@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </section>
+    <!-- Section: Contact v.1 -->
+    </div>
+
+    <div class="">
+        <section style="height:80px;"></section>
+        <div class="row" style="text-align:center;">
+            <h2>Bootstrap Dark Footer UI</h2>
+        </div>
+
+
+        <!----------- Footer ------------>
+        <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <img src="{{ asset('images/logo/Logo.png') }}" >
+                    <a href="https://time.is/Besançon" id="time_is_link" >Heure à Besançon :</a>
+                    <span id="_z71f"></span>
+                    <script src="//widget.time.is/t.js"></script>
+                    <script>
+                        time_is_widget.init({_z71f:{id:"Besançon_z71f"}});
+                    </script>
+                    <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="{{ path('acceuille') }}">Acceuil</a></li>
+                            <li><a href="{{ path('newsletter') }}">Newsletter</a></li>
+                            <li><a href="{{ path('abonnements') }}">Abonnements</a></li>
+                            <li><a href="{{ path('contacter') }}">Nous contacter</a></li>
+                            <li><a href="{{ path('app_register') }}">S'inscrire</a></li>
+                            <li><a href="{{ path('app_login') }}">Se connecter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100011142006243">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/bastien.odt/?hl=fr">Instagram</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Newsletter</h4>
+                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                    <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p></section>
+
+    </div>
+{% endblock %}

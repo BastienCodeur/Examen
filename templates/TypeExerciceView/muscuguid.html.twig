@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+{% block titrePage %}Acceuil {% endblock %}
+
+{% block stylesheets %}
+
+
+{% endblock %}
+{% block body %}
+
+    <form>
+        <input type="button" class="btn btn-lg btn-danger cancel-visited" value="Retour à l'accueil 🏡" onclick="history.go(-1)">
+    </form>
+
+    <div class="card text-center">
+        <div class="card-header">
+            <h1>MUSCULATION GUIDÉE</h1>
+            <img class="card-img-top" src="{{ asset('images/Sport/muscuguide.jpg') }}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Qu’est-ce que la musculation guidée ?</h4>
+            <h5>  <p class="card-text">Réalisez un renforcement musculaire efficace avec un appareil de musculation à charge guidée !</p>  </h5>
+            <h5> <p>✔La prise de masse</p> </h5>
+            <h5> <p>✔La construction musculaire</p> </h5>
+            <h5> <p>✔La minceur</p> </h5>
+            <h2 class="sina-title-title">Coachs sportifs diplômés d'état</h2>
+
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+{% endblock %}

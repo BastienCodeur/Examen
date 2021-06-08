@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}S'inscrire{% endblock %}
+{% block titrePage %}S'inscrire {% endblock %}
+{% block stylesheets %}
+  <link rel="stylesheet" href="{{ asset('css/inscrire.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+
+{% endblock %}
+{% block body %}
+    Salut {{ nom }}
+
+
+
+
+  <div class="container login-container">
+    <div class="row">
+      <div class="col-md-6 login-form-1">
+        <h3>S'inscrire</h3>
+
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Ton Email *" value="" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Ton mot de passe *" value="" />
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btnSubmit" value="S'inscrire" />
+        </div>
+        <div class="form-group">
+          <a href="#" class="btnForgetPwd">Forget Password?</a>
+        </div>
+
+      </div>
+      <div class="col-md-6 login-form-2">
+        <div class="login-logo">
+          <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+        </div>
+        <h3>Déjà inscrit? Connecte toi!</h3>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your Email *" value="" />
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Your Password *" value="" />
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btnSubmit" value="Login" />
+        </div>
+        <div class="form-group">
+
+          <a href="#" class="btnForgetPwd" value="Login">Forget Password?</a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="">
+    <section style="height:80px;"></section>
+    <div class="row" style="text-align:center;">
+      <h2>Bootstrap Dark Footer UI</h2>
+    </div>
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+      <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+          <img src="{{ asset('images/logo/Logo.png') }}" >
+          <a href="https://time.is/Besançon" id="time_is_link" >Heure à Besançon :</a>
+          <span id="_z71f"></span>
+          <script src="//widget.time.is/t.js"></script>
+          <script>
+            time_is_widget.init({_z71f:{id:"Besançon_z71f"}});
+          </script>
+          <p>© 2014 BS3 UI Kit, All rights reserved</p>
+        </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+          <h4>Menu —</h4>
+          <div class="col-md-6">
+            <ul class="pages">
+              <li><a href="{{ path('acceuille') }}">Acceuil</a></li>
+              <li><a href="{{ path('newsletter') }}">Newsletter</a></li>
+              <li><a href="{{ path('abonnements') }}">Abonnements</a></li>
+              <li><a href="{{ path('contacter') }}">Nous contacter</a></li>
+              <li><a href="{{ path('app_register') }}">S'inscrire</a></li>
+              <li><a href="{{ path('app_login') }}">Se connecter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Terms & Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100011142006243">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="https://www.instagram.com/bastien.odt/?hl=fr">Instagram</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+          <h4>Newsletter</h4>
+          <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+          <p>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+          </div><!-- /input-group -->
+          </p>
+        </div>
+      </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p></section>
+
+  </div>
+{% endblock %}
